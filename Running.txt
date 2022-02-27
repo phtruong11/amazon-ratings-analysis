@@ -1,0 +1,8 @@
+Both get_ite_rate_change.py and get_year_rate_change.py have the same running format. 
+On school's cluster, type spark-submit get_*_rate_change.py <dataset.csv> <output> to run.
+It has two outputs: first is the general data (like percentage of positive change), which will be printed on the screen; second is the table, which will be written as json file in output folder
+
+To run review-predict.py, on the cluster type: spark-submit review-predict.py /user/pht1/videogame
+It should print out the predictions table and evaluation score.
+The dataset is on my HDFS. You can also download the data from http://jmcauley.ucsd.edu/data/amazon/
+
